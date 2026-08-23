@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SBI Recon Tool — UX Case Study | Tapas Sahoo</title>
+<meta name="description" content="UX case study: Reconciliation &amp; Controls Platform — a unified enterprise platform for automated financial reconciliation, exception management, and operational controls.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">TS</a>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#problem">Problem</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#solution">Solution</a></li>
+      <li><a href="#screens">Screens</a></li>
+      <li><a href="index.html#projects">← Portfolio</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle color theme">◐</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="cs-container">
+    <a href="index.html#projects" class="back-link">← Back to projects</a>
+    <p class="eyebrow">UX Case Study</p>
+    <h1>Reconciliation &amp; Controls Platform</h1>
+    <p class="cs-lede">A unified enterprise platform for automated financial reconciliation, exception management, and operational controls — designed to help organizations reconcile high-volume transactions across banking, card payments, vendors, and rewards ecosystems.</p>
+
+    <dl class="cs-meta">
+      <div><dt>Product</dt><dd>Auto Recon Tool</dd></div>
+      <div><dt>Role</dt><dd>Senior UX Designer</dd></div>
+      <div><dt>Team</dt><dd>1 Designer · 1 PM · 1 Researcher</dd></div>
+      <div><dt>Timeline</dt><dd>12 Weeks</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main>
+
+  <section id="overview" class="cs-section">
+    <div class="cs-container">
+      <span class="cs-num">01</span>
+      <h2>Project Overview</h2>
+      <p class="cs-body">
+        The Reconciliation &amp; Controls Platform (RCP) centralizes reconciliation processes that are
+        traditionally managed across multiple systems and spreadsheets. It automatically matches
+        transactions from different data sources, highlights exceptions, provides workflow-based
+        approvals, and delivers real-time operational insights.
+      </p>
+
+      <figure class="cs-figure">
+        <a href="assets/recon/auto-recon.png" target="_blank" rel="noopener">
+          <img src="assets/recon/auto-recon.png" alt="Auto Recon process pyramid showing Foundation, Acceleration, and Business Impact layers mapped to stakeholder value" loading="lazy">
+        </a>
+        <figcaption>The Auto Recon process — from foundation capabilities through intelligence to business impact, mapped against the stakeholders each layer serves.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <span class="cs-num">02</span>
+      <h2>Breaking Legacy Barriers</h2>
+      <h3 class="cs-sub">Business Vision</h3>
+      <p class="cs-body">
+        The Reconciliation &amp; Controls Platform is an enterprise-grade solution that automates
+        transaction matching. It is particularly suited for banking, credit card, payment processing,
+        vendor finance, and loyalty reward operations — where accuracy, auditability, and operational
+        efficiency are critical.
+      </p>
+
+      <figure class="cs-figure">
+        <a href="assets/recon/ownership.png" target="_blank" rel="noopener">
+          <img src="assets/recon/ownership.png" alt="Platform pillars triangle: Automation, Intelligence, and Governance surrounding the Auto Recon process" loading="lazy">
+        </a>
+        <figcaption>Three pillars hold the platform up: Automation, Intelligence, and Governance.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="problem" class="cs-section">
+    <div class="cs-container">
+      <span class="cs-num">03</span>
+      <h2>The Core Problems</h2>
+
+      <div class="cs-split">
+        <div class="cs-split-media">
+          <img src="assets/recon/problem.png" alt="Illustration of an analyst looking overwhelmed at a laptop" loading="lazy">
+        </div>
+        <div class="cs-split-body">
+          <div class="problem-item">
+            <h3>Information overload</h3>
+            <p>The landing page displays multiple KPIs, owner names, timestamps, and actions simultaneously — making it difficult to identify the most important item.</p>
+          </div>
+          <div class="problem-item">
+            <h3>Overcrowded left navigation</h3>
+            <p>Navigation becomes overwhelming, especially for first-time users.</p>
+          </div>
+          <div class="problem-item">
+            <h3>Filter panel consumes workspace</h3>
+            <p>The persistent filter panel occupies nearly one-third of the screen, reducing the space available for charts and analysis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="cs-section alt">
+    <div class="cs-container">
+      <span class="cs-num">04</span>
+      <h2>My Approach — Discovery Phase</h2>
+      <p class="cs-body">Goal: understand users, understand business goals, build the empathy map. The research inquiry covered five key areas.</p>
+
+      <ol class="approach-list">
+        <li>
+          <span class="approach-num">1</span>
+          <div>
+            <h3>Workflow Mapping</h3>
+            <p>Understood how finance and operations users complete reconciliation — from data ingestion through to exception closure — before designing the UI.</p>
+          </div>
+        </li>
+        <li>
+          <span class="approach-num">2</span>
+          <div>
+            <h3>Tool Integration</h3>
+            <p>Connecting the platform with external systems that generate financial transaction data, so reconciliation happens automatically instead of through manual uploads.</p>
+          </div>
+        </li>
+        <li>
+          <span class="approach-num">3</span>
+          <div>
+            <h3>Cognitive Friction</h3>
+            <p>Most users spend mental effort understanding what they're seeing and deciding what to do next. The recurring question: <em>"Where should I look first?"</em></p>
+          </div>
+        </li>
+        <li>
+          <span class="approach-num">4</span>
+          <div>
+            <h3>Error &amp; Risk Analysis</h3>
+            <p>Identified high-risk reconciliation failure points across data ingestion, transaction matching, and exception handling.</p>
+          </div>
+        </li>
+        <li>
+          <span class="approach-num">5</span>
+          <div>
+            <h3>Pain Points, Goals &amp; Behaviour</h3>
+            <p>User-centered research to identify key pain points, define operational goals, and map user behavior across the reconciliation workflow.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="cs-container">
+      <span class="cs-num">05</span>
+      <h2>Key Research Findings</h2>
+
+      <figure class="cs-figure">
+        <a href="assets/recon/key-findings.png" target="_blank" rel="noopener">
+          <img src="assets/recon/key-findings.png" alt="Research findings table mapping inquiry focus to key metrics and the resulting pain point" loading="lazy">
+        </a>
+        <figcaption>Each area of inquiry traced to a measured finding and the pain point it produced.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <span class="cs-num">06</span>
+      <h2>Stakeholder Mapping</h2>
+      <p class="cs-body">
+        For the Reconciliation &amp; Controls Platform, the end users are the teams responsible for
+        monitoring, investigating, and approving financial transactions.
+      </p>
+
+      <div class="two-col">
+        <div>
+          <h3 class="cs-sub">Primary end users</h3>
+          <ul class="plain-list">
+            <li><strong>Operations Analyst</strong><br>Primary user — daily monitoring and investigation</li>
+            <li><strong>Maker / Reconciliation Executive</strong><br>Resolves and submits reconciliation entries</li>
+            <li><strong>Checker / Finance Manager</strong><br>Validates, approves, and ensures compliance</li>
+            <li><strong>Super Admin</strong><br>Configures rules, users, jobs, and integrations</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="cs-sub">Stakeholders (indirect users)</h3>
+          <ul class="plain-list">
+            <li>Finance &amp; Accounting teams</li>
+            <li>Risk &amp; Compliance teams</li>
+            <li>Internal Audit</li>
+            <li>Product &amp; Operations leadership</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="cs-container">
+      <span class="cs-num">07</span>
+      <h2>End User Interview</h2>
+
+      <div class="interview">
+        <div class="interview-person">
+          <img src="assets/recon/sankha-b.png" alt="Portrait of Mr. Sankha B, Senior Business Analyst" loading="lazy">
+          <h3>Mr. Sankha B</h3>
+          <p class="interview-role">Checker / Finance Manager<br>Senior Business Analyst</p>
+        </div>
+        <div class="interview-body">
+          <blockquote>
+            As an end user I operate alongside Analysts, Makers, and Checkers working in finance
+            operations. They rely on the platform to monitor reconciliation status, resolve transaction
+            exceptions, and approve financial records with accuracy and auditability.
+          </blockquote>
+          <h4>About the role</h4>
+          <p>Validates the Maker's changes, approves reconciliations, and ensures compliance before closure. Configures reconciliation rules, manages users, schedules jobs, and monitors system integrations.</p>
+          <h4>How he works</h4>
+          <ul>
+            <li>Configures reconciliation rules and validates the Maker's changes</li>
+            <li>Manages users and approves reconciliations</li>
+            <li>Ensures compliance before closure and schedules jobs</li>
+            <li>Monitors system integrations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="solution" class="cs-section alt">
+    <div class="cs-container">
+      <span class="cs-num">08</span>
+      <h2>The Solutions</h2>
+
+      <div class="solution-grid">
+        <div class="solution-card">
+          <span class="solution-tag">Information overload</span>
+          <p>Introduced a <strong>priority-first dashboard</strong> with Critical Exceptions and Recent Runs at the top, informed by a card sorting exercise.</p>
+        </div>
+        <div class="solution-card">
+          <span class="solution-tag">Overcrowded navigation</span>
+          <p>Made the left navigation <strong>collapsible</strong> with expandable sections.</p>
+        </div>
+        <div class="solution-card">
+          <span class="solution-tag">Filter panel eats space</span>
+          <p>Converted the filter panel into a <strong>slide-out drawer</strong> to maximize chart space.</p>
+        </div>
+      </div>
+
+      <h2 class="cs-h2-spaced">The Impact</h2>
+      <div class="impact-row">
+        <div class="impact">
+          <span class="impact-num">50–60%</span>
+          <h3>Faster monitoring</h3>
+          <p>Users identify reconciliation health and critical exceptions at a glance instead of scanning multiple cards.</p>
+        </div>
+        <div class="impact">
+          <span class="impact-num">↓ Clicks</span>
+          <h3>Quicker navigation</h3>
+          <p>Simplified layout and improved information grouping reduce the clicks needed to reach detailed reconciliation views.</p>
+        </div>
+        <div class="impact">
+          <span class="impact-num">↓ Load</span>
+          <h3>Reduced cognitive load</h3>
+          <p>Clear visual hierarchy and prioritized KPIs make the interface easier to understand for operations teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="cs-container">
+      <span class="cs-num">09</span>
+      <h2>Role: Ownership Beyond Design</h2>
+
+      <div class="two-col">
+        <div class="own-block">
+          <h3 class="cs-sub">Data &amp; analytics ownership</h3>
+          <p class="cs-note">A reconciliation product is data-heavy, so designers can influence how data is consumed.</p>
+          <ul class="plain-list">
+            <li>Decided which metrics deserve primary visibility</li>
+            <li>Designed exception prioritization instead of showing all data equally</li>
+            <li>Introduced progressive disclosure for detailed reports</li>
+            <li><strong>Impact:</strong> users spend less time interpreting data</li>
+          </ul>
+        </div>
+        <div class="own-block">
+          <h3 class="cs-sub">Process improvement</h3>
+          <p class="cs-note">Own the workflow, not only the interface.</p>
+          <ul class="plain-list">
+            <li>Conducted discussions with reconciliation analysts</li>
+            <li>Mapped pain points across daily monitoring workflows</li>
+            <li>Validated the redesign during UAT with business users</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="cs-body cs-body-spaced">
+        Owned the end-to-end redesign of the Recon Monitoring module — partnering with product managers,
+        finance operations, and engineering to redefine KPI prioritization, streamline reconciliation
+        workflows, standardize reusable components, and support implementation through developer handoff
+        and UAT.
+      </p>
+    </div>
+  </section>
+
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <span class="cs-num">10</span>
+      <h2>Core Business Data into Design</h2>
+      <ul class="tag-list tag-list-lg">
+        <li>Dashboard statement summary</li>
+        <li>Easy-to-read charts and graphs</li>
+        <li>Pie chart for data recognition</li>
+        <li>Filter parameters side by side</li>
+        <li>Auto-close filter parameters</li>
+        <li>Auto-close left nav panel</li>
+        <li>Categorically divided sub-headers</li>
+        <li>Sub-header for product name display</li>
+        <li>Easy download report</li>
+      </ul>
+
+      <h2 class="cs-h2-spaced">What Matters the Most</h2>
+      <div class="table-wrap">
+        <table class="cs-table">
+          <thead><tr><th>Area</th><th>Benefit</th></tr></thead>
+          <tbody>
+            <tr><td>Accuracy</td><td>Reduces manual reconciliation errors</td></tr>
+            <tr><td>Speed</td><td>Automates matching of thousands of transactions</td></tr>
+            <tr><td>Compliance</td><td>Complete audit trail and approval workflow</td></tr>
+            <tr><td>Visibility</td><td>Real-time reconciliation status and KPIs</td></tr>
+            <tr><td>Flexibility</td><td>Supports multiple reconciliation types and payment networks</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cs-pullquote">
+        In one sentence: the platform's primary value is automating financial reconciliation while giving
+        operations teams complete visibility, exception control, and audit-ready governance.
+      </p>
+
+      <figure class="cs-figure">
+        <a href="assets/recon/stakeholders.png" target="_blank" rel="noopener">
+          <img src="assets/recon/stakeholders.png" alt="Six platform benefits with an outcome summary: automate, simplify, control, collaborate, deliver value" loading="lazy">
+        </a>
+        <figcaption>The value the platform delivers, and the outcome it drives across the ecosystem.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="screens" class="cs-section">
+    <div class="cs-container">
+      <span class="cs-num">11</span>
+      <h2>The Screens</h2>
+      <p class="cs-body">20 screens across 3 views, built around the Auto Recon process.</p>
+
+      <figure class="cs-figure">
+        <a href="assets/recon/screen-dashboard.png" target="_blank" rel="noopener">
+          <img src="assets/recon/screen-dashboard.png" alt="Executive dashboard showing processed volume, reconciled totals, open exceptions, settlement amount, and active reconciliation configurations" loading="lazy">
+        </a>
+        <figcaption>Executive Dashboard — priority-first layout with KPIs surfaced above the configuration table.</figcaption>
+      </figure>
+
+      <figure class="cs-figure">
+        <a href="assets/recon/screen-configurations.png" target="_blank" rel="noopener">
+          <img src="assets/recon/screen-configurations.png" alt="Reconciliation configurations screen showing four credit card configurations as cards with match rates" loading="lazy">
+        </a>
+        <figcaption>Recon Management — configurations as scannable cards, each carrying its own match rate and owner.</figcaption>
+      </figure>
+
+      <figure class="cs-figure">
+        <a href="assets/recon/screen-charts.png" target="_blank" rel="noopener">
+          <img src="assets/recon/screen-charts.png" alt="Charts view with slide-out filter drawer, match rate donut chart, and exceptions by reason code" loading="lazy">
+        </a>
+        <figcaption>Charts view — the filter panel became a slide-out drawer, returning a third of the screen to analysis.</figcaption>
+      </figure>
+
+      <h3 class="cs-sub cs-sub-spaced">Responsive views</h3>
+      <div class="responsive-row">
+        <figure class="cs-figure cs-figure-tab">
+          <a href="assets/recon/screen-tablet.png" target="_blank" rel="noopener">
+            <img src="assets/recon/screen-tablet.png" alt="Tablet view of the reconciliation configurations screen with icon-only collapsed navigation" loading="lazy">
+          </a>
+          <figcaption>Tablet — navigation collapses to icons.</figcaption>
+        </figure>
+        <figure class="cs-figure cs-figure-mob">
+          <a href="assets/recon/screen-mobile.png" target="_blank" rel="noopener">
+            <img src="assets/recon/screen-mobile.png" alt="Mobile view of the reconciliation configurations screen with stacked cards" loading="lazy">
+          </a>
+          <figcaption>Mobile — cards stack in a single column.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <span class="cs-num">12</span>
+      <h2>Key Learnings</h2>
+      <ul class="learning-list">
+        <li>In a data-heavy product, deciding <strong>what not to show</strong> matters as much as what to show. Prioritization is the design work.</li>
+        <li>Enterprise redesigns succeed when functionality is preserved. Users trusted the change because nothing they relied on disappeared.</li>
+        <li>Talking directly to reconciliation analysts surfaced friction that no analytics dashboard would have revealed.</li>
+        <li>Validating in UAT with real business users caught assumptions early, before they became rework.</li>
+      </ul>
+
+      <figure class="cs-figure cs-figure-thanks">
+        <img src="assets/recon/thank-you.png" alt="Thank you card summarizing the Reconciliation and Controls Platform case study" loading="lazy">
+      </figure>
+
+      <div class="cs-cta">
+        <a href="assets/recon/Recon_UX_CaseStudy.pdf" class="btn btn-primary" target="_blank" rel="noopener">Open full case study (PDF)</a>
+        <a href="index.html#projects" class="btn btn-outline">← Back to projects</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Tapas Sahoo. Built and published on GitHub Pages.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

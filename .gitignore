@@ -1,0 +1,5 @@
+# Local dev tooling
+.claude/
+
+# Case study source deck (10MB) — the exported PDF is what the site serves
+assets/Recon_UX_CaseStudy.pptx
