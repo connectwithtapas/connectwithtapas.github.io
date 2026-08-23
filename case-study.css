@@ -32,7 +32,6 @@
 .cs-lede {
   color: var(--text-muted);
   font-size: 1.1rem;
-  max-width: 68ch;
   margin: 0 0 40px;
 }
 
@@ -66,10 +65,11 @@
 .cs-num {
   display: block;
   color: var(--accent);
-  font-size: 0.8rem;
+  font-size: 2.6rem;
   font-weight: 800;
-  letter-spacing: 0.15em;
-  margin-bottom: 10px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  margin-bottom: 14px;
 }
 
 .cs-section h2 {
@@ -92,7 +92,6 @@
 .cs-body {
   color: var(--text-muted);
   font-size: 1.02rem;
-  max-width: 72ch;
   margin: 0 0 28px;
 }
 
@@ -117,11 +116,19 @@
   color: var(--text-muted);
   font-size: 0.88rem;
   margin-top: 12px;
-  max-width: 70ch;
 }
 
 .cs-figure-thanks { margin-top: 44px; }
 .cs-figure-thanks img { border: none; }
+
+/* Diagram shown at reduced scale — full width on small screens */
+.cs-figure-compact img { max-width: 70%; }
+.cs-figure-compact figcaption { max-width: 70%; }
+
+@media (max-width: 860px) {
+  .cs-figure-compact img,
+  .cs-figure-compact figcaption { max-width: 100%; }
+}
 
 /* Problem split */
 .cs-split {
@@ -176,7 +183,7 @@
 }
 
 .approach-list h3 { margin: 6px 0 6px; font-size: 1.05rem; }
-.approach-list p { margin: 0; color: var(--text-muted); font-size: 0.95rem; max-width: 68ch; }
+.approach-list p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
 
 /* Interview */
 .interview {
