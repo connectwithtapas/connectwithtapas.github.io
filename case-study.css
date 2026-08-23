@@ -22,8 +22,8 @@
 
 .back-link:hover { color: var(--accent); }
 
-/* 50% larger than the shared .eyebrow in style.css (0.8rem) */
-.cs-hero .eyebrow { font-size: 1.2rem; }
+/* Scaled up from the shared .eyebrow in style.css (0.8rem) */
+.cs-hero .eyebrow { font-size: 1.8rem; }
 
 .cs-hero h1 {
   font-size: clamp(2rem, 4.5vw, 3rem);
