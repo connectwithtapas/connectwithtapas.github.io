@@ -22,6 +22,9 @@
 
 .back-link:hover { color: var(--accent); }
 
+/* 50% larger than the shared .eyebrow in style.css (0.8rem) */
+.cs-hero .eyebrow { font-size: 1.2rem; }
+
 .cs-hero h1 {
   font-size: clamp(2rem, 4.5vw, 3rem);
   font-weight: 800;
@@ -121,13 +124,14 @@
 .cs-figure-thanks { margin-top: 44px; }
 .cs-figure-thanks img { border: none; }
 
-/* Diagram shown at reduced scale — full width on small screens */
-.cs-figure-compact img { max-width: 70%; }
-.cs-figure-compact figcaption { max-width: 70%; }
+/* Diagrams shown at reduced scale. Each figure sets its own --fig-scale;
+   below 860px they all revert to full width to stay readable. */
+.cs-figure-scaled img,
+.cs-figure-scaled figcaption { max-width: var(--fig-scale, 100%); }
 
 @media (max-width: 860px) {
-  .cs-figure-compact img,
-  .cs-figure-compact figcaption { max-width: 100%; }
+  .cs-figure-scaled img,
+  .cs-figure-scaled figcaption { max-width: 100%; }
 }
 
 /* Problem split */
